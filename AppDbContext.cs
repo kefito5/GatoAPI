@@ -8,12 +8,12 @@ namespace GatoAPI
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Partidas> Partidas { get; set; }
-        public DbSet<Historialpartidas> HistorialPartidas { get; set; }
+        public DbSet<HistorialPartidas> HistorialPartidas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Partidas>().ToTable("Partidas");
-            modelBuilder.Entity<Historialpartidas>().ToTable("Partidas");
+            modelBuilder.Entity<HistorialPartidas>().ToTable("Partidas");
         }
     }
 }

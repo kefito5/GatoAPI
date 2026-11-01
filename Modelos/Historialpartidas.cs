@@ -1,10 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace GatoAPI.Modelos
+﻿namespace GatoAPI.Modelos
 {
     public class HistorialPartidas
     {
-        [Key]
         public int idHistorial { get; set; }
         public int idPartida { get; set; }
         public int? posicion { get; set; }

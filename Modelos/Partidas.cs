@@ -1,10 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace GatoAPI.Modelos
-{   
+﻿namespace GatoAPI.Modelos
+{
     public class Partidas
     {
-        [Key]
         public int idPartida { get; set; }
         public char jugadorActual { get; set; }
         public char estado { get; set; }
