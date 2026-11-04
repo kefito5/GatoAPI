@@ -12,8 +12,8 @@ namespace GatoAPI
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Partidas>().ToTable("Partidas");
-            modelBuilder.Entity<HistorialPartidas>().ToTable("Partidas");
+            modelBuilder.Entity<Partidas>().ToTable("Partidas").HasKey(e => e.idPartida);
+            modelBuilder.Entity<HistorialPartidas>().ToTable("HistorialPartidas").HasKey(e => e.idHistorial);
         }
     }
 }
